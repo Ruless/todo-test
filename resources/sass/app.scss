@@ -1,0 +1,77 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+.w-100 {
+    width: 100%;
+}
+
+.el-header {
+    padding-top: 25px !important;
+}
+
+.tasks {
+    &-item {
+        cursor: pointer;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #dcdfe6;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        background: #fff;
+        border-left: 5px solid transparent;
+
+        &__checkbox {
+            min-width: 20px;
+            min-height: 20px;
+            border: 1px solid #dcdfe6;
+            font-size: 20px;
+            border-radius: 100%;
+            transition: all .25s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                border-color: #409eff;
+            }
+        }
+
+        &__name {
+            font-size: 16px;
+            padding: 0;
+            margin: 0;
+        }
+
+        &-info {
+            padding-left: 10px;
+            width: 100%;
+        }
+    }
+
+    &-complite {
+        padding: 15px 0;
+
+        &__title {
+            font-size: 14px;
+            color: #67c23a;
+            margin-bottom: 15px;
+        }
+
+        .tasks-item {
+            .tasks-item__checkbox {
+                color: #67c23a;
+            }
+
+            .tasks-item__name {
+                text-decoration: line-through;
+            }
+        }
+    }
+}
